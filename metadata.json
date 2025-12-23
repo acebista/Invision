@@ -1,7 +1,0 @@
-{
-  "name": "InvoiceVision",
-  "description": "An AI-powered invoice extraction and audit automation system for professional firms, supporting handwritten Nepali and English documents.",
-  "requestFramePermissions": [
-    "camera"
-  ]
-}
