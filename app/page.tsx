@@ -475,7 +475,7 @@ const UploadView: React.FC<UploadViewProps> = ({ onComplete, onBatchUpload, stat
     }, [tempData, isProcessing]);
 
     return (
-        <div className="flex flex-col md:flex-row h-[calc(100vh-48px)] md:h-[calc(100vh-48px)] pb-16 md:pb-0 overflow-hidden bg-gray-50/50">
+        <div className="flex flex-col md:flex-row min-h-[calc(100vh-48px-56px)] md:h-[calc(100vh-48px)] pb-16 md:pb-0 overflow-auto md:overflow-hidden bg-gray-50/50">
             {/* Stats Panel - Horizontal on mobile, Sidebar on desktop */}
             <div className="md:w-48 bg-white border-b md:border-b-0 md:border-r border-gray-200 p-3 md:p-4 flex md:flex-col gap-4 md:gap-6 overflow-x-auto md:overflow-visible">
                 <div className="flex md:block items-center gap-4 md:gap-0">
@@ -1316,9 +1316,9 @@ export default function InvoiceVisionApp() {
 
 
     return (
-        <div className="flex min-h-screen bg-[#f8fafc] text-gray-800 antialiased overflow-hidden selection:bg-[#a3e635] selection:text-[#0d2a1d]">
+        <div className="flex min-h-screen bg-[#f8fafc] text-gray-800 antialiased selection:bg-[#a3e635] selection:text-[#0d2a1d]">
             <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
-            <main className="flex-1 flex flex-col h-screen overflow-hidden">
+            <main className="flex-1 flex flex-col min-h-screen md:h-screen md:overflow-hidden">
                 <TopBar
                     selectedCompany={selectedCompany}
                     selectedFY={selectedFY}
